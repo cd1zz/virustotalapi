@@ -3,7 +3,7 @@ info:
   title: VirusTotal API
   version: 1.0.0
 servers:
-  - url: https://www.virustotal.com/api/v3/
+  - url: https://www.virustotal.com/api/v3
 paths:
   /files/{id}:
     get:
