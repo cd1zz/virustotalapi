@@ -15,12 +15,6 @@ paths:
           schema:
             type: string
           description: SHA-256, SHA-1 or MD5 identifying the file
-        - in: header
-          name: x-apikey
-          required: true
-          schema:
-            type: string
-          description: Your API key
       responses:
         '200':
           description: Successful operation
