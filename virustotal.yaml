@@ -23,6 +23,24 @@ paths:
             responses:
                 "200":
                     description: OK
+    /api/v3/domains/{domain}/whois:
+        get:
+            operationId: VTDomainWhois
+            summary: Lookup domain WHOIS information
+            parameters:
+                - in: path
+                  name: domain
+                  schema:
+                      type: string
+                  required: true
+                  description: The domain address to lookup WHOIS information
+            responses:
+                "200":
+                    description: OK
+                "400":
+                    description: Bad Request
+                "404":
+                    description: Not Found
     /api/v3/ip_addresses/{ip}:
         get:
             operationId: VTIPReport
